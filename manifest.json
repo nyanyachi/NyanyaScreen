@@ -6,6 +6,7 @@
   "permissions": ["storage"],
   "action": {
     "default_title": "NyanyaScreen",
+    "default_icon": "Asset/Logo-Off.png",
     "default_popup": "popup.html"
   },
   "content_scripts": [

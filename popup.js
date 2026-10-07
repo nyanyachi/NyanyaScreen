@@ -1,5 +1,6 @@
 const toggle = document.getElementById("enabled");
 const status = document.getElementById("status");
+const logo = document.getElementById("logo");
 const blurSlider = document.getElementById("blur");
 const blurValue = document.getElementById("blur-value");
 let blurRequest = 0;
@@ -17,6 +18,7 @@ function showState(response) {
   if (!Number.isFinite(response.spread)) throw new Error("Unavailable spread setting");
   if (!Number.isFinite(response.opacity)) throw new Error("Unavailable opacity setting");
   toggle.checked = response.enabled;
+  logo.src = response.enabled ? "Asset/Logo-On.png" : "Asset/Logo-Off.png";
   toggle.disabled = false;
   status.textContent = response.enabled ? "On" : "Off";
   blurSlider.value = response.blur;
@@ -32,6 +34,7 @@ function showState(response) {
 
 function showUnavailable() {
   toggle.checked = false;
+  logo.src = "Asset/Logo-Off.png";
   toggle.disabled = true;
   blurSlider.disabled = true;
   spreadSlider.disabled = true;
@@ -51,6 +54,7 @@ async function loadState() {
 }
 
 toggle.addEventListener("change", async () => {
+  logo.src = toggle.checked ? "Asset/Logo-On.png" : "Asset/Logo-Off.png";
   toggle.disabled = true;
   blurSlider.disabled = true;
   spreadSlider.disabled = true;

@@ -6,7 +6,9 @@
 }
 
 body { width: 200px; margin: 0; padding: 18px; }
-h1 { font-size: 18px; margin: 0 0 16px; }
+.title-row { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.title-row img { width: 36px; height: 36px; object-fit: contain; }
+h1 { font-size: 18px; margin: 0; }
 .control { display: flex; align-items: center; gap: 12px; }
 .blur-control, .spread-control, .opacity-control { margin-top: 18px; }
 .blur-label, .spread-label, .opacity-label { display: flex; justify-content: space-between; margin-bottom: 6px; }
