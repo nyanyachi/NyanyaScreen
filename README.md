@@ -17,7 +17,7 @@ NyanyaScreen은 YouTube 영상을 시청할 때 영상 화면을 주변 영역�
 - 설정값 로컬 저장
 - 어두운 시청 환경
 - 활성화 중 Scroll Lock
-- 일반 모드 / 극장 모드 / 전체화면 지원
+- 일반 모드 / 극장 모드 지원
 - YouTube 기본 플레이어와 컨트롤 유지
 
 ### 기본 설정
@@ -78,7 +78,7 @@ NyanyaScreen is a lightweight Chrome and Edge Manifest V3 extension that creates
 - Real-time Video Spill synchronized with YouTube playback
 - Adjustable Blur, Spread, and Opacity
 - Dark viewing environment and scroll lock while active
-- Supports Normal Mode, Theater Mode, and Fullscreen
+- Supports Normal Mode and Theater Mode
 - Keeps YouTube’s native player and controls
 - No server, account, login, cloud sync, frameworks, or external dependencies
 
