@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "NyanyaScreen",
+  "version": "0.1.0",
+  "description": "NyanyaScreen provides an immersive viewing experience for YouTube.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "NyanyaScreen",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

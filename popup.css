@@ -1,0 +1,41 @@
+:root {
+  color-scheme: dark;
+  font: 14px system-ui, sans-serif;
+  background: #171717;
+  color: #f5f5f5;
+}
+
+body { width: 200px; margin: 0; padding: 18px; }
+h1 { font-size: 18px; margin: 0 0 16px; }
+.control { display: flex; align-items: center; gap: 12px; }
+.blur-control, .spread-control, .opacity-control { margin-top: 18px; }
+.blur-label, .spread-label, .opacity-label { display: flex; justify-content: space-between; margin-bottom: 6px; }
+#blur, #spread, #opacity { width: 100%; margin: 0; accent-color: #2563eb; }
+#blur:disabled, #spread:disabled, #opacity:disabled { opacity: 0.5; }
+
+#enabled {
+  appearance: none;
+  width: 42px;
+  height: 24px;
+  margin: 0;
+  border: 1px solid #777;
+  border-radius: 14px;
+  background: #444;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+#enabled::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 3px;
+  border-radius: 50%;
+  background: white;
+}
+
+#enabled:checked { background: #2563eb; border-color: #2563eb; }
+#enabled:checked::before { transform: translateX(18px); }
+#enabled:focus-visible { outline: 2px solid #93c5fd; outline-offset: 3px; }
+#enabled:disabled { opacity: 0.5; cursor: default; }

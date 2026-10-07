@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NyanyaScreen</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <h1>NyanyaScreen</h1>
+    <div class="control">
+      <input id="enabled" type="checkbox" role="switch" aria-label="Enable NyanyaScreen" aria-describedby="status" disabled>
+      <span id="status" role="status">Loading…</span>
+    </div>
+    <div class="blur-control">
+      <div class="blur-label">
+        <label for="blur">Blur</label>
+        <output id="blur-value" for="blur">5 px</output>
+      </div>
+      <input id="blur" type="range" min="0" max="60" step="1" value="5" disabled>
+    </div>
+    <div class="spread-control">
+      <div class="spread-label">
+        <label for="spread">Spread</label>
+        <output id="spread-value" for="spread">240 px</output>
+      </div>
+      <input id="spread" type="range" min="0" max="240" step="1" value="240" disabled>
+    </div>
+    <div class="opacity-control">
+      <div class="opacity-label">
+        <label for="opacity">Opacity</label>
+        <output id="opacity-value" for="opacity">75%</output>
+      </div>
+      <input id="opacity" type="range" min="0" max="100" step="1" value="75" disabled>
+    </div>
+  </body>
+</html>
